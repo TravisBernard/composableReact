@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Composable React App</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="dist/bundleA.js"></script>
+    <script src="dist/bundleB.js"></script>
+    <script src="dist/bundleC.js"></script>
+    <script>
+        window.componentMap = { componentA, componentB, componentC }
+    </script>
+</head>
+<body>
+    <h1>Composable React Example</h1>
+    <MyReactApp/>
+
+    <!-- Load our React component. -->
+    <script src="dist/composable.js"></script>
+</body>
+</html>
