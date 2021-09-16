@@ -33,7 +33,7 @@ export default [
       output: {
          name: "componentA",
          file: "dist/bundleA.js",
-         format: "iife",
+         format: "umd",
          sourcemap: true,
       }
    },
@@ -43,7 +43,7 @@ export default [
       output: {
          name: "componentB",
          file: "dist/bundleB.js",
-         format: "iife",
+         format: "umd",
          sourcemap: true,
       }
    },
@@ -53,7 +53,7 @@ export default [
       output: {
          name: "componentC",
          file: "dist/bundleC.js",
-         format: "iife",
+         format: "umd",
          sourcemap: true,
       }
    },
