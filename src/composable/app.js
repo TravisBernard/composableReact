@@ -1,9 +1,7 @@
 import React, { lazy, Suspense, useMemo, useState } from "react";
 
-export default function App() {
-   const componentMap = useMemo(() => {
-      return window.componentMap
-   }, [])
+export default function App(props) {
+   const {componentMap} = props
 
    const firstComponent = Object.keys(componentMap)[0];
    const [selectedComponent, setSelectedComponent] = useState(firstComponent)
